@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-12 col-md-10">
+        <h4 class="text-danger">Gerenciamento de contatos</h4>
+    </div>
+    <div class="col-12 col-md-2">
+        <button class="btn btn-outline-primary btn-block btn-new"><i class="mdi mdi-plus"></i> Novo</button>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+            <tr>
+                <td class="text-center" width="5%">Codigo</td>
+                <td class="text-center" width="40%">Nome</td>
+                <td class="text-center" width="20%">Telefone</td>
+                <td class="text-center" width="20%">Celular</td>
+                <td class="text-center" width="15%">Ações</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-center" width="5%">13</td>
+                <td class="text-center" width="40%">Victor</td>
+                <td class="text-center" width="20%">213516161</td>
+                <td class="text-center" width="20%">416141631</td>
+                <td class="text-center" width="15%">
+                    <button class="btn btn-outline-primary btn-sm btn-view"><i
+                            class="mdi mdi-eye mdi-18px"></i></button>
+                    <button class="btn btn-outline-warning btn-sm btn-edit"><i class="mdi mdi-pencil mdi-18px"></i></button>
+                    <button class="btn btn-outline-danger btn-sm btn-del"><i class="mdi mdi-delete mdi-18px"></i></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalContato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="closemodalContato" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../controller/ctr-contato.js"></script>
+<script>$(".btn-new").click(function() {$('#conteudo').load("add-contato.html")})</script>
